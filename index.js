@@ -35,10 +35,11 @@ const cli = meow(shtml`
 const npmrc = path.join(os.homedir(), '.npmrc')
 assert(npmrc)
 
-const token = fs.readFileSync(npmrc, 'utf8').split('=')[1]
+const token = fs.readFileSync(npmrc, 'utf8').split('=')[1].trim()
 
 if (cli.flags.show) {
   console.log(token)
 } else {
-  cp.exec(`  export NPM_TOKEN=${token}`)
+  const cmd = `  NPM_TOKEN=${token} ${cli.input.join(' ')}`
+  cp.exec(cmd)
 }

@@ -1,0 +1,23 @@
+{
+  "name": "ntok",
+  "description": "Set your npm token env variable",
+  "author": "John Otander",
+  "version": "0.1.0",
+  "main": "index.js",
+  "bin": {
+    "ntok": "index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {},
+  "repository": "johnotander/ntok",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "assert-file-exists": "^1.0.0",
+    "meow": "^3.7.0",
+    "shtml": "^0.1.0"
+  },
+  "devDependencies": {}
+}

@@ -1,6 +1,6 @@
 {
   "name": "ntok",
-  "description": "Set your npm token env variable",
+  "description": "Get your npm token",
   "author": "John Otander",
   "version": "0.1.0",
   "main": "index.js",

@@ -2,7 +2,7 @@
   "name": "ntok",
   "description": "Get your npm token",
   "author": "John Otander",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "bin": {
     "ntok": "index.js"

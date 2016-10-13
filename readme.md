@@ -1,6 +1,6 @@
-# ntok [![Build Status](https://secure.travis-ci.org/johnotander/ntok.svg?branch=master)](https://travis-ci.org/johnotander/ntok) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+# ntok
 
-Set your npm token env variable
+A teeny cli tool to get your npm token env variable (for the lazy).
 
 ## Installation
 
@@ -10,8 +10,14 @@ npm i -g ntok
 
 ## Usage
 
-```javascript
+```sh
 ntok -h
+```
+
+On MacOS, export the env variable in one fell swoop:
+
+```sh
+ntok -s | pbcopy && export NPM_TOKEN=$(pbpaste)
 ```
 
 ## License

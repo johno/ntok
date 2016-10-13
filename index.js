@@ -11,7 +11,7 @@ const assert = require('assert-file-exists')
 const cli = meow(shtml`
 <div>
   <underline>Usage</underline>
-  $ ntok [command] <br><br>
+  $ ntok [option] <br><br>
 
   <underline>Options</underline>
   -h, --help - Display help menu
@@ -19,7 +19,7 @@ const cli = meow(shtml`
   -s, --show - Show token<br><br>
 
   <underline>Examples</underline>
-  $ ntok npm i
+  $ ntok -s
   $ ntok -v
   $ ntok -h
   $ ntok -s
